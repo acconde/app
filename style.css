@@ -1,68 +1,39 @@
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .icons {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .icons img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0;
-  }
-  
-  .card {
-    width: 31%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .card h2 {
-    margin-top: 0;
-  }
-  
-  .card p {
-    margin: 0;
-  }
-  
-  .card img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-  }
-  
-  .notification {
-    text-align: center;
-    font-style: italic;
-    margin: 20px 0;
-  }
-  
+#search-suggestions {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc
+} 
+.card {
+  margin-bottom: 20px;
+}
+
+.card-image {
+  margin-top: 20px;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+
+.card .card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+
+.card-rate-label {
+  font-weight: 0.5rem;
+}
+
+.card-unit {
+  margin-top: 0.5rem;
+}
+

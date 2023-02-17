@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Crypto Rates</title>
+    <meta charset="UTF-8">
+    <title>Cryptocurrency Rates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1 class="text-center my-5">Cryptocurrency Rates</h1>
+
     <div class="container">
-      <h1>Crypto Rates</h1>
-      <input type="text" id="search" placeholder="Search...">
-      <div class="icons" id="icons"></div>
-      <div class="row" id="row1"></div>
-      <div class="row" id="row2"></div>
-      <div class="row" id="row3"></div>
-      <p id="notification"></p>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search for a cryptocurrency..." id="search-input">
+            <button class="btn btn-primary" type="button" id="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div id="card-container"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="text-center my-3" id="loading">Loading...</div>
+          <div class="text-center my-3" id="end">End of Results</div>
+          <div class="text-center my-3" id="error">No results found.</div>
+        </div>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
